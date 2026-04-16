@@ -1,3 +1,3 @@
 # Tauri Playground
 
-Experimental Tauri projects for prototyping and exploring desktop application concepts.
+Experimental [Tauri](https://tauri.app/start/) projects for prototyping and exploring desktop application concepts.
