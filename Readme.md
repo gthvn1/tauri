@@ -2,13 +2,17 @@
 
 Experimental [LiveView](https://github.com/phoenixframework/phoenix_live_view) projects for prototyping and exploring.
 
-- Start: https://hexdocs.pm/phoenix/up_and_running.html
+- Getting started: https://hexdocs.pm/phoenix/up_and_running.html
 
-# Notes
+## Status
 
-- Currently, projects are created using: `mix phx.new hello --no-ecto`
+- Created `hello_nothing` and read through [Directory structure](https://hexdocs.pm/phoenix/directory_structure.html)
+
+## Notes
+
+- Projects are created with: `mix phx.new hello --no-ecto`
   - TODO: set up a database
-- On NixOS, I need to modify `config/config.exs` to correctly set up Tailwind and esbuild. Here is an example of my configuration:
+- On NixOS, `config/config.exs` must be modified to correctly configure Tailwind and esbuild:
 
 ```elixir
 # Configure esbuild (the version is required)
@@ -26,15 +30,15 @@ config :tailwind,
   ...
 ```
 
-# Projects
-
-## Hello && hello_nothing
+## Projects
 
 ### hello
-- Just do: `mix phx.new --no-ecto hello`
-- On NixOS, we need to manage the path to `tailwindcss` and `esbuild`. Otherwise the display is not working.
-  - See above for details
-  - It can be skipped using `--no-html` and `--no-assets`
+
+- Created with: `mix phx.new --no-ecto hello`
+- On NixOS, the paths to `tailwindcss` and `esbuild` must be configured for the UI to render correctly.
+  - See Notes above for details
+  - Alternatively, skip assets entirely with `--no-html --no-assets`
 
 ### hello_nothing
-- Finally we started as simple as possible: `mix phx.new --no-ecto --no-html --no-assets --no-live hello_nothing`
+
+- Created as simply as possible: `mix phx.new --no-ecto --no-html --no-assets --no-live hello_nothing`
