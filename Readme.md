@@ -2,6 +2,8 @@
 
 Experimental [Live view](https://github.com/phoenixframework/phoenix_live_view) projects for prototyping and exploring desktop application concepts.
 
+- Start: https://hexdocs.pm/phoenix/up_and_running.html
+  
 # Notes
 
 - Currently projects are created using: `mix phx.new hello --no-ecto`
