@@ -33,3 +33,4 @@ config :tailwind,
 - Just do: `mix phx.new --no-ecto hello`
 - On NixOS, we need to manage the path to `tailwindcss` and `esbuild`. Otherwise the display is not working.
   - See above for details
+  - It can be skipped using `--no-html` and `--no-assets`
